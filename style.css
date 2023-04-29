@@ -60,8 +60,8 @@ section {
 
 /* 版权声明样式 */
 footer {
-	background-color: #222;
-	color: #fff;
-	padding: 0.5em;
-	text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: rgb(15, 112, 202);
+    margin-top: -50px;
 }
