@@ -57,7 +57,11 @@ section {
 .article a:hover {
 	color: #666;
 }
-
+content {
+    min-height: 100%;
+    background: rgb(107, 238, 255);
+    overflow: hidden;
+}
 /* 版权声明样式 */
 footer {
     height: 50px;
