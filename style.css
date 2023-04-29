@@ -26,6 +26,33 @@ nav {
 	align-items: center;
 }
 
+nav label {
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+	display: none;
+}
+
+nav .menu {
+	display: flex;
+	flex-direction: column;
+	background-color: #333;
+	position: fixed;
+	top: 60px; /* 距离顶部高度 */
+	left: -100%; /* 初始隐藏在屏幕左侧 */
+	width: 100%;
+	height: calc(100% - 60px); /* 高度减去导航栏的高度 */
+	padding: 20px;
+	transition: all 0.3s ease-in-out; /* 过渡效果 */
+}
+
+nav input[type="checkbox"]:checked + .menu {
+	left: 0; /* 点击后显示菜单 */
+}
+
 nav a {
 	color: #fff;
 	padding: 10px;
@@ -46,4 +73,39 @@ footer {
 	margin-top: auto; /* 位于剩余空间的底部 */
 	background-color: #ccc;
     text-align: center;
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 480px) {
+
+	header h1 {
+		font-size: 28px;
+	}
+
+	nav label {
+		font-size: 32px;
+	}
+
+	nav input[type="checkbox"]:checked + .menu {
+		left: 0;
+	}
+
+	nav .menu {
+		flex-direction: column;
+		font-size: 24px;
+	}
+
+	nav a {
+		display: block;
+		margin: 10px 0;
+		border-bottom: 1px solid #ddd;
+	}
+
+	section h2 {
+		font-size: 24px;
+	}
+
+	section p {
+		font-size: 20px;
+	}
 }
