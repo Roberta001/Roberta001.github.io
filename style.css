@@ -35,34 +35,36 @@ nav label {
 nav input[type="checkbox"] {
 	display: none;
 }
-
+/* 导航栏菜单样式 */
 nav .menu {
-	display: flex;
-	flex-direction: column;
-	background-color: #333;
-	position: fixed;
-	top: 60px; /* 距离顶部高度 */
-	left: -100%; /* 初始隐藏在屏幕左侧 */
-	width: 100%;
-	height: calc(100% - 60px); /* 高度减去导航栏的高度 */
-	padding: 20px;
-	transition: all 0.3s ease-in-out; /* 过渡效果 */
-}
-
-nav input[type="checkbox"]:checked + .menu {
-	left: 0; /* 点击后显示菜单 */
+  display: flex;
+  flex-direction: row; /* 修改为水平排列 */
+  justify-content: space-around; /* 平均分布每个菜单项 */
+  align-items: center;
+  background-color: #333;
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav a {
-	color: #fff;
-	padding: 10px;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* 调整字体大小 */
+  padding: 10px;
+  border-radius: 5px; /* 添加圆角 */
+  transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
-	background-color: #ddd;
-	color: #333;
+  background-color: #ddd;
+  color: #333;
 }
+
 
 nav .active {
 	background-color: #555;
