@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 0;
     color: #333;
     padding-bottom: 80px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,7 +51,7 @@ header {
 }
 
 footer {
-  height: 80px;
+  height: 60px;
   width: 100%;
   background-color: #f8f8f8;
   position: fixed;
