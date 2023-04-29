@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系方式</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>我的网站</h1>
+    <nav>
+      <ul>
+        <li><a href="main.html">主页</a></li>
+        <li><a href="download.html">下载站</a></li>
+        <li><a href="contact.html">联系方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>联系我们</h2>
+    <p>如果您有任何问题或建议，请随时联系我们！</p>
+    <form method="post" action="submit-form.php" id="contact-form">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+
+      <label for="email">邮箱:</label>
+      <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+
+      <label for="message">信息:</label>
+      <textarea id="message" name="message" required placeholder="请输入您要咨询的内容"></textarea>
+
+      <button type="submit">发送</button>
+    </form>
+  </section>
+
+  <footer>
+    版权所有 © 2021 我的网站
+  </footer>
+
+</body>
+
+</html>
