@@ -17,10 +17,18 @@ body {
 }
 
 .content {
-  background: #fff url(https://cdn.pixabay.com/photo/2017/11/05/13/36/music-2911569_1280.jpg) no-repeat center center fixed;
-  background-size: cover;
+  animation: slideInUp 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
 .beat-btn {
   background: linear-gradient(to bottom right, #ffb6c1, #87ceeb);
   color: #fff;
