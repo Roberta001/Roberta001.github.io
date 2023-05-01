@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>主页</title>
     <link rel="stylesheet" href="style.css">
-     
+
 </head>
 
-<body>
+<body style="opacity:0;">
+    <!-- 首先将 body 的透明度设为 0 -->
     <header>
         <h1>Roberta的小窝</h1>
         <nav>
@@ -30,5 +31,11 @@
     <footer>
         版权所有 © 2023 Roberta
     </footer>
+
+    <script>
+    window.onload = function() {
+        document.body.style.opacity = "1"; // 当页面加载完成时，将 body 的透明度设为 1，实现渐变的过渡动画
+    }
+    </script>
 </body>
 </html>
