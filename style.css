@@ -162,7 +162,6 @@ a[href]:not([class]) {
         bottom: 0;
         position: absolute;
         background: #333;
-        transition: width 0.25s ease-in-out;
     }
 
     a[href]:not([class]):hover:before,
