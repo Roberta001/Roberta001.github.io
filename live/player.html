@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播间</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #videoFrame, #chatFrame {
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- 引入flv.js -->
+<script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
+
+<!-- 定义video标签 -->
+<video id="video" width=100% height=50% controls></video>
+
+<script>
+  // 获取video标签
+  const video = document.getElementById('video');
+  // 创建FLV播放器实例
+  const flvPlayer = flvjs.createPlayer({
+    type: 'flv',
+    url: 'http://cj.chunjie.host:44121/live/livestream/main.flv'
+  });
+  // 绑定播放器到video标签
+  flvPlayer.attachMediaElement(video);
+  // 加载FLV流
+  flvPlayer.load();
+  // 播放FLV流
+  flvPlayer.play();
+</script>
+    <iframe id="chatFrame" src="https://chat.pighog.repl.co/room/@live_luanyu" width=100% height=50% frameborder="0"></iframe>
+</body>
+</html>
