@@ -342,7 +342,7 @@ const helpContent = {
 	},
 	longExposure: {
 		header: '保留烟花的火花',
-		body: '可以保留烟花留下的火花(可能会导致一场的卡顿)'
+		body: '可以保留烟花留下的火花(可能会导致卡顿)'
 	}
 };
 
